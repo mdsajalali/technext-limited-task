@@ -1,8 +1,10 @@
+import Header from "./components/shared/Header";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-5xl">Technext Limited Task</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 
