@@ -3,16 +3,27 @@ import { Link } from "react-router-dom";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("");
 
   useEffect(() => {
+    setLoading(true);
     fetch("https://dummyjson.com/users")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data.users);
+        setLoading(false);
       });
   }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center mt-10">
+        <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-[#06D6A0]"></div>
+      </div>
+    );
+  }
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
