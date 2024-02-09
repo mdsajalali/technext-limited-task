@@ -3,10 +3,10 @@ import Header from "./components/shared/Header";
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
       <Users />
-    </>
+    </div>
   );
 };
 

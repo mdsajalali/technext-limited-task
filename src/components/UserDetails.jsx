@@ -5,30 +5,24 @@ const UserDetails = () => {
   console.log(user);
 
   return (
-    <div className="max-w-[1200px] mx-auto">
-      <h1 className="text-3xl font-bold mb-4">
-        User Name: {user.firstName + " " + user.lastName}
-      </h1>
-      <div className="flex items-center mb-4">
-        <img
-          src={user.image}
-          alt="User Avatar"
-          className="w-12 h-12 rounded-full mr-2"
-        />
-        <div>
-          <h2 className="text-xl font-bold">
-            {user.firstName} {user.lastName}
-          </h2>
-          <p className="text-gray-500">{user.email}</p>
+    <div className="max-w-[1200px] mx-auto my-10">
+      <img
+        className="w-[250px] object-cover mx-auto my-2"
+        src={user.image}
+        alt=""
+      />
+      <div className="px-5 my-5 text-center">
+        <div className="flex items-center justify-center gap-1 text-[18px] font-semibold">
+          <h1>Name:</h1>
+          <h1>{user.firstName}</h1>
+          <h1>{user.lastName}</h1>
         </div>
-      </div>
-      <div>
-        <h3 className="text-lg font-bold mb-2">Address:</h3>
+        <p className="text-[16px] font-medium">Email: {user.email}</p>
         {/* Display address information */}
-        <p>{user.address.address}</p>
-        <p>{user.address.city}</p>
+        <p>Address: {user.address.address}</p>
+        <p>City: {user.address.city}</p>
         {/* Display company name */}
-        <p>{user.company.name}</p>
+        <p>Company: {user.company.name}</p>
       </div>
     </div>
   );
