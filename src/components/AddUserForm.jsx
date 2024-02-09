@@ -1,4 +1,6 @@
 import { useState } from "react";
+import UsersList from "./UsersList";
+import toast from "react-hot-toast";
 
 const AddUserForm = () => {
   const [submittedData, setSubmittedData] = useState([]);
@@ -27,7 +29,7 @@ const AddUserForm = () => {
     console.log(userInfo);
 
     setSubmittedData((prevSubmittedData) => [...prevSubmittedData, userInfo]);
-    alert("User added");
+    toast.success("User Added Successfully!");
     form.reset();
   };
 
@@ -104,33 +106,9 @@ const AddUserForm = () => {
           Add user
         </button>
       </form>
-      {/* Show submitted data */}
       <div className="grid grid-cols-1 md:grid-cols-2 mb-14 mt-5 lg:grid-cols-3 gap-10">
         {submittedData.map((data) => (
-          <div
-            key={data.id}
-            className="shadow-md rounded-md transform transition-transform hover:scale-105"
-          >
-            <div>
-              <img
-                className="w-[250px] object-cover mx-auto my-2"
-                src={data.avatarUrl}
-                alt=""
-              />
-            </div>
-            <div className="px-5 my-5 text-center">
-              <div className="flex items-center justify-center gap-1 text-[18px] font-semibold">
-                <h1>Name:</h1>
-                <h1>{data.firstName}</h1>
-                <h1>{data.lastName}</h1>
-              </div>
-
-              <p className="text-[16px] font-medium">Email: {data.email}</p>
-              <p>Address: {data.address}</p>
-              <p>City: {data.city}</p>
-              <p>Company: {data.companyName}</p>
-            </div>
-          </div>
+          <UsersList key={data.id} data={data} />
         ))}
       </div>
     </div>
