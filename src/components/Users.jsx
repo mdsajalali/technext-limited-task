@@ -74,7 +74,7 @@ const Users = () => {
           <option value="company">Company Name</option>
         </select>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 mb-14 mt-5 lg:grid-cols-3 gap-10">
         {filteredUsers.map((user) => (
           <div
             key={user.id}
