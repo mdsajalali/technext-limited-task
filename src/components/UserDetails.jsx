@@ -1,8 +1,22 @@
+import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import Loading from "./shared/Loading";
 
 const UserDetails = () => {
+  const [loading, setLoading] = useState(true);
   const user = useLoaderData();
-  console.log(user);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="max-w-[1200px] mx-auto my-10">

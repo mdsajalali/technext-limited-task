@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Loading from "./shared/Loading";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -18,11 +19,7 @@ const Users = () => {
   }, []);
 
   if (loading) {
-    return (
-      <div className="flex justify-center items-center mt-10">
-        <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-[#06D6A0]"></div>
-      </div>
-    );
+    return <Loading />;
   }
 
   const handleSearchChange = (e) => {
