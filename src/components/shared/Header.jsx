@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
 const Header = () => {
@@ -10,14 +10,14 @@ const Header = () => {
         </Link>
         <nav className="flex list-none gap-2 sm:gap-5">
           <li>
-            <Link className="text-[18px] font-semibold" to="/">
+            <NavLink className="text-[18px] font-semibold" to="/">
               Users
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="text-[18px] font-semibold" to="/addUser">
+            <NavLink className="text-[18px] font-semibold" to="/addUser">
               AddUser
-            </Link>
+            </NavLink>
           </li>
         </nav>
       </div>

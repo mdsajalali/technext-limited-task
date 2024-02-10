@@ -26,7 +26,7 @@ const AddUserForm = () => {
       companyName,
       avatarUrl,
     };
-    console.log(userInfo);
+    // console.log(userInfo);
 
     setSubmittedData((prevSubmittedData) => [...prevSubmittedData, userInfo]);
     toast.success("User Added Successfully!");
@@ -100,7 +100,7 @@ const AddUserForm = () => {
         </div>
 
         <button
-          className="w-full bg-[#06D6A0] my-5 text-white py-2 text-[20px] rounded-md"
+          className="w-full bg-[#06D6A0] hover:bg-teal-400 transition-all my-5 text-white py-2 text-[20px] rounded-md"
           type="submit"
         >
           Add user

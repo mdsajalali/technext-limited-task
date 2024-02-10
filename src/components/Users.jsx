@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import UserCard from "./UserCard";
 import Loading from "./shared/Loading";
 
 const Users = () => {
@@ -74,36 +74,9 @@ const Users = () => {
           <option value="company">Company Name</option>
         </select>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 mb-14 mt-5 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-5 lg:grid-cols-3 gap-10">
         {filteredUsers.map((user) => (
-          <div
-            key={user.id}
-            className="shadow-md rounded-md transform transition-transform hover:scale-105"
-          >
-            <div>
-              <img
-                className="w-[250px] object-cover mx-auto my-2"
-                src={user.image}
-                alt=""
-              />
-            </div>
-            <div className="px-5 my-5 text-center">
-              <Link
-                to={`/userDetails/${user.id}`}
-                className="flex items-center justify-center gap-1 text-[18px] font-semibold"
-              >
-                <h1>Name:</h1>
-                <h1>{user.firstName}</h1>
-                <h1>{user.lastName}</h1>
-              </Link>
-              <p className="text-[16px] font-medium">Email: {user.email}</p>
-              {/* Display address information */}
-              <p>Address: {user.address.address}</p>
-              <p>City: {user.address.city}</p>
-              {/* Display company name */}
-              <p>Company: {user.company.name}</p>
-            </div>
-          </div>
+          <UserCard key={user.id} user={user} />
         ))}
       </div>
     </div>
