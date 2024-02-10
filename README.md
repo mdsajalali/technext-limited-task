@@ -1,17 +1,47 @@
 # Technext-Limited-Task
 
+## Technology Stack
 
-#### Live Link: [technext-limited-task](https://technext-user-list-app.vercel.app/)
-#### Screen Shots [UI-design-screens](https://drive.google.com/drive/folders/1pNuioYGGW4XWpMc3_UGDlQf74u7FfsHt?usp=sharing)
+- Developed using React.js and Tailwind CSS.
+- Leveraged React hooks such as useEffect and useState for managing state and data fetching.
+
+## Responsiveness
+
+- Ensured full responsiveness across various devices and screen sizes.
+
+## User List Page
+
+- Implemented a user list page displaying multiple users' information.
+- Each user card includes details like avatar, name, email, address, city, and company.
+- Enabled interactive hover effects for user engagement.
+
+## User Details Page
+
+- Implemented a user details page accessible by clicking on a user's name.
+- Showcased detailed information about the selected user, including avatar, name, email, address, city, and company.
+
+## Add User Functionality
+
+- Added a form for users to input details like avatar URL, first name, last name, email, address, and company name.
+Implemented form submission to seamlessly add new users to the user list, with their submitted data dynamically displayed on the add user page.
+- Utilized controlled components to manage form state and handle user input effectively.
+
+## Live Link
+
+[technext-limited-task](https://technext-user-list-app.vercel.app/)
+
+## Screen Shots
+
+[UI-design-screens](https://drive.google.com/drive/folders/1pNuioYGGW4XWpMc3_UGDlQf74u7FfsHt?usp=sharing)
 
 ## Used Technologies
 
-- [x] HTML
-- [x] TAILWINDCSS
-- [x] REACT.JS
-- [x] REACT-ROUTER-DOM
-- [x] REACT-HOT-TOAST
-- [x] PROP-TYPES
+- HTML
+- TAILWINDCSS
+- REACT.JS
+- REACT-ROUTER-DOM
+- REACT-HOT-TOAST
+- PROP-TYPES
 
 ### 💻 Getting Started
 
