@@ -1,8 +1,34 @@
-# React + Vite
+# Technext-Limited-Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+#### Live Link: [technext-limited-task](https://technext-user-list-app.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Used Technologies
+
+- [x] HTML
+- [x] TAILWINDCSS
+- [x] REACT.JS
+- [x] REACT-ROUTER-DOM
+- [x] REACT-HOT-TOAST
+- [x] PROP-TYPES
+
+### 💻 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mdsajalali/technext-limited-task.git
+```
+
+2. Install dependencies:
+
+```
+cd technext-limited-task
+npm install
+```
+
+3. Run the development server:
+
+```
+npm run dev
+```
