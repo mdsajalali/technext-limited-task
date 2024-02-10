@@ -54,8 +54,8 @@ const Users = () => {
   });
 
   return (
-    <div className="max-w-[1200px] mx-auto py-2">
-      <div className="flex items-center justify-between mb-5">
+    <div className="max-w-[1200px] mx-auto py-2 px-4">
+      <div className="flex flex-wrap sm:flex-nowrap items-center justify-between mb-5">
         <input
           type="text"
           placeholder="Search by name..."
@@ -66,7 +66,7 @@ const Users = () => {
         <select
           value={sortBy}
           onChange={handleSortChange}
-          className="px-4 py-2 text-lg border border-gray-300 rounded-md focus:outline-none focus:border-[#06D6A0]"
+          className="px-4 py-2 text-lg mt-2 mb-5 sm:mb-0 sm:mt-0 border border-gray-300 rounded-md focus:outline-none focus:border-[#06D6A0]"
         >
           <option value="">Sort by...</option>
           <option value="name">Name</option>

@@ -34,7 +34,7 @@ const AddUserForm = () => {
   };
 
   return (
-    <div className="max-w-[1200px] mx-auto my-10">
+    <div className="max-w-[1200px] mx-auto my-10 px-4">
       <form onSubmit={handleSubmit}>
         <div className="w-full">
           <input
@@ -46,7 +46,7 @@ const AddUserForm = () => {
           />
         </div>
 
-        <div className="w-full flex items-center justify-center gap-10 my-5">
+        <div className="w-full flex flex-wrap sm:flex-nowrap items-center justify-center gap-5 sm:gap-10 my-5">
           <input
             type="text"
             placeholder="First Name"
@@ -64,7 +64,7 @@ const AddUserForm = () => {
           />
         </div>
 
-        <div className="w-full flex items-center justify-center gap-10 mt-5">
+        <div className="w-full flex flex-wrap sm:flex-nowrap items-center justify-center gap-5 sm:gap-10 mt-5">
           <input
             type="email"
             placeholder="Email"
@@ -81,7 +81,7 @@ const AddUserForm = () => {
           />
         </div>
 
-        <div className="w-full flex items-center justify-center gap-10 mt-5">
+        <div className="w-full flex flex-wrap sm:flex-nowrap items-center justify-center gap-5 sm:gap-10 mt-5">
           <input
             type="text"
             placeholder="City"
